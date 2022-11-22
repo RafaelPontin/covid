@@ -13,7 +13,7 @@ int main(){
     
     int loginValido = 0;
 
-    do
+    do 
     {
          system("cls");
          printf("Digite o usuario: ");
@@ -33,7 +33,7 @@ int main(){
    
 
 
-    printf("digite alguma coisa para finalizar o sistema");
+    printf("digite alguma coisa para finalizar o sistema!");
     scanf("%s", teste);
     
     return 0;
