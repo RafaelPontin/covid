@@ -53,7 +53,7 @@ int main(){
     	printf("================Sistema_Covid==================\n");
     	printf("===============================================\n\n");
     	
-    	printf("Selecione a opcao\n1 - gravar\n2- Registro\n3-Sair\nDigite a opcao: ");
+    	printf("Selecione a opcao\n1 - Cadastro\n2- Lista\n3-Sair\nDigite a opcao: ");
     	scanf("%d", &opcao);
     	
     	
@@ -62,10 +62,31 @@ int main(){
     		FILE *pont_arq;
     		pont_arq = fopen("banco.txt", "a");
     		
-    		printf("Digite o nome: ");
+    		printf("Nome: ");
     		scanf("%s", nome);
+		printf("CPF: ");
+    		scanf("%s", CPF);
+		printf("Data de Nascimento: ");
+    		scanf("%s", Data de Nascimento);
+		printf("Endereço: ");
+    		scanf("%s", Endereço);
+		printf("Cidade: ");
+    		scanf("%s", Cidade);
+		printf("Estado: ");
+    		scanf("%s", Estado);
+		printf("CEP: ");
+    		scanf("%s", CEP);
+		printf("Telefone: ");
+    		scanf("%s", Telefone);
+		printf("E-mail: ");
+    		scanf("%s", E-mail);
+		printf("Data do Diagnóstico: ");
+    		scanf("%s", Data do Diagnóstico);
+		printf("Comorbidade: ");
+    		scanf("%s", Comorbidade);
+		
     		
-    		fprintf(pont_arq, "%s", strcat(nome, "|"));
+    		fprintf(pont_arq, "%s", strcat(nome,CPF,Data de Nascimento,Endereço,Cidade,Estado,CEP,Telefone,E-mail,Data do Diagnóstico,Comorbidade "|"));
     		
     		fclose(pont_arq);
     		
